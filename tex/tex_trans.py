@@ -27,10 +27,10 @@ def tex_trans(data_lines):
 
     # 余計な空白を一つに変換
     data_lines = re.sub('[ ]+', ' ', data_lines)
-    # 複数改行を一つの改行に変換
-    data_lines = re.sub('[\n]+', '\n', data_lines)
     # 改行後の空白を削除
     data_lines = re.sub('\n'+'[ ]+', '\n', data_lines) 
+    # 複数改行を一つの改行に変換
+    data_lines = re.sub('[\n]+', '\n', data_lines)
 
     # 方程式の変換
     equations = re.findall(r'\\begin{equation}[\s\S]*?\\end{equation}', data_lines)
@@ -51,12 +51,15 @@ def tex_trans(data_lines):
     eqnarrays = re.findall(r'\\begin{eqnarray}[\s\S]*?\\end{eqnarray}', data_lines)
     for eqnarray in eqnarrays:
         data_lines = data_lines.replace(eqnarray, 'EQUATION')
-    commentouts = re.findall(r'%.*\n', data_lines)
+    # コメントアウトの削除
+    commentouts = re.findall(r'%.*(?=\n)', data_lines)
     for com in commentouts:
         data_lines = data_lines.replace(com, '')
+    # 行頭にバックスラッシュのある行の削除
     functions = re.findall(r'(\n\\[\s\S]*?)(?=\n)', data_lines)
     for func in functions:
         data_lines = data_lines.replace(func, '')
+    # 文中の数式の変換
     eqs = re.findall(r'\$[\s\S]*?\$', data_lines)
     for eq in eqs:
         data_lines = data_lines.replace(eq, 'EQ')
