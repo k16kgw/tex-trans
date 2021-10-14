@@ -1,0 +1,65 @@
+\documentclass{article}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\usepackage{color}
+\usepackage{lineno}
+\usepackage{ulem}
+
+% Theorem
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{rem}[thm]{Remark}
+
+% \newcommand{\dt}{\partial_t}
+\newcommand{\Lap}{\Delta}
+
+\title{Test Paper}
+%%%%%%%%%%%%%
+\author{Keiichiro Kagawa\thanks{Bakada University, Corresponding author: gerogero7429@gmail.com}}
+% \address{Bakada University}
+%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  In this paper, we are concerned with the existence of solutions for the Bakada equation.
+\end{abstract}
+
+\noindent
+  {\bf AMS subject classification.}
+  00X00.
+
+%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%
+\section{Introduction}\indent
+  %%%%%%%%%%%%%%% Problem %%%%%%%%%%%%%%%
+  In this paper, we discuss the initial boundary value problem 
+  of the following Bakada equation with the homogeneous Dirichlet boundary condition.
+  \begin{equation}\label{BE}
+    \beta a = ka \Lap a,\ x\in\Omega,
+  \end{equation}
+  where $\Omega$ is a bounded domain in $\mathbb{R}^3$ with smooth boundary $\partial\Omega$;
+  $a:[0, T]\times\Omega\to\mathbb{R}$ is an unknown function;
+  $\beta$ and $k$ are positive constants.
+    The Bakada equation was proposed by Kumasan \cite{Kumasan} in 1901 
+    as a mathematical model to describe the ecology of bears in Hilbert space.
+
+\section*{Acknowledgments}
+  The author is supported by the Big Bear Fellowship {\#}BB01234.
+
+%%%%%%%%%%%%%%% BIBLIOGRAPHY %%%%%%%%%%%%%%%%%%
+\bibliography{ref}
+\bibliographystyle{elsarticle-num}
+
+
+\end{document}
+

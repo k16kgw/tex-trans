@@ -1,0 +1,47 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: test_article.aux
+The style file: elsarticle-num.bst
+Database file #1: ref.bib
+You've used 1 entry,
+            2952 wiz_defined-function locations,
+            678 strings with 5195 characters,
+and the built_in function-call counts, 302 in all, are:
+= -- 27
+> -- 4
+< -- 0
++ -- 2
+- -- 1
+* -- 20
+:= -- 59
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 1
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 7
+empty$ -- 32
+format.name$ -- 1
+if$ -- 68
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 11
+num.names$ -- 1
+pop$ -- 4
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 18
+stack$ -- 0
+substring$ -- 19
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 3
+width$ -- 2
+write$ -- 15
+is.kanji.str$ -- 0
