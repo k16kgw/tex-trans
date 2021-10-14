@@ -1,0 +1,10 @@
+
+In this paper, we are concerned with the existence of solutions for the Bakada equation.
+{\bf AMS subject classification.} 00X00.
+In this paper, we discuss the initial boundary value problem of the following Bakada equation with the homogeneous Dirichlet boundary condition.
+EQUATION where EQ is a bounded domain in EQ with smooth boundary EQ;
+EQ is an unknown function;
+EQ and EQ are positive constants.
+The Bakada equation was proposed by Kumasan \cite{Kumasan} in 1901 as a mathematical model to describe the ecology of bears in Hilbert space.
+EQUATION
+The author is supported by the Big Bear Fellowship {\#}BB01234.
